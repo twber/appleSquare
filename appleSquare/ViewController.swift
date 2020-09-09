@@ -53,10 +53,10 @@ class ViewController: UIViewController {
                 }
                 content = content + "\n"
             }
-        case 2://diagnal
+        case 2://diagonal
             for i in 1...number{
             for j in 1...number{
-                if i==j{
+                if i==(number+1-j){
                 content = content + "🍎"
                 //diagonal red
                 }else{
