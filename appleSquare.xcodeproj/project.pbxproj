@@ -13,6 +13,7 @@
 		AB75FC9D2507B69000E612C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75FC9B2507B69000E612C1 /* Main.storyboard */; };
 		AB75FC9F2507B69100E612C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB75FC9E2507B69100E612C1 /* Assets.xcassets */; };
 		AB75FCA22507B69100E612C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB75FCA02507B69100E612C1 /* LaunchScreen.storyboard */; };
+		AB75FCAA2509154A00E612C1 /* shapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75FCA92509154A00E612C1 /* shapeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AB75FC9E2507B69100E612C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB75FCA12507B69100E612C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB75FCA32507B69100E612C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB75FCA92509154A00E612C1 /* shapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shapeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				AB75FC952507B69000E612C1 /* AppDelegate.swift */,
+				AB75FCA92509154A00E612C1 /* shapeViewController.swift */,
 				AB75FC972507B69000E612C1 /* SceneDelegate.swift */,
 				AB75FC992507B69000E612C1 /* ViewController.swift */,
 				AB75FC9B2507B69000E612C1 /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB75FCAA2509154A00E612C1 /* shapeViewController.swift in Sources */,
 				AB75FC9A2507B69000E612C1 /* ViewController.swift in Sources */,
 				AB75FC962507B69000E612C1 /* AppDelegate.swift in Sources */,
 				AB75FC982507B69000E612C1 /* SceneDelegate.swift in Sources */,
