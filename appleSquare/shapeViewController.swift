@@ -61,11 +61,13 @@ class shapeViewController: UIViewController {
              content = content + "\n"
          }
         case 2: //pyramid
-            if number<8{
+            if number<10{
                 var j: Int = 0
                 for i in 1...number {
-                   for _ in 1...number + 1 - i {
-                       content += "🥝"
+                   for kiwi in 0...number - i {
+                    if kiwi != 0{
+                    content += "🥝"
+                   }
                    }
                    for j in 1...i {
                        content += "🍎"
@@ -87,17 +89,17 @@ class shapeViewController: UIViewController {
             row 5: print 1 space  + 5 stars
             row 6: print 2 spaces + 3 stars
             row 7: print 3 spaces + 1 star*/
-            
-            if number>2, number%2 != 0 {
-                for row in (1 ..< number + 1) {
+            var height: Int = number*2 - 1
+            if height>2, height%2 != 0 {
+                for row in (1 ..< height + 1) {
                     var starCount = 0
                     var spaceCount = 0
-                if (row <= (number / 2  + 1) ) {
+                if (row <= (height / 2  + 1) ) {
                     starCount  = row * 2 - 1
-                    spaceCount = (number/2 + 1) - row
+                    spaceCount = (height/2 + 1) - row
               }else{
-                    starCount  = (number - row) * 2 + 1
-                spaceCount = row - (number/2+1)
+                    starCount  = (height - row) * 2 + 1
+                spaceCount = row - (height/2+1)
               }
               
               var spaceInFront = String(repeating: "🥝", count: spaceCount);
