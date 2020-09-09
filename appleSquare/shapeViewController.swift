@@ -94,10 +94,10 @@ class shapeViewController: UIViewController {
                     var spaceCount = 0
                 if (row <= (number / 2  + 1) ) {
                     starCount  = row * 2 - 1
-                    spaceCount = (number/2 + 2) - row
+                    spaceCount = (number/2 + 1) - row
               }else{
                     starCount  = (number - row) * 2 + 1
-                spaceCount = row - number/2
+                spaceCount = row - (number/2+1)
               }
               
               var spaceInFront = String(repeating: "🥝", count: spaceCount);
