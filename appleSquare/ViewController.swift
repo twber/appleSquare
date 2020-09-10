@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         
         switch pattern{
         case 0:// one pattern
+            
             for _ in 1...number{
             for _ in 1...number{
                 content = content + "🍎"

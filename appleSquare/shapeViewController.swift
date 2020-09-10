@@ -61,7 +61,19 @@ class shapeViewController: UIViewController {
              content = content + "\n"
          }
         case 2: //pyramid
-            if number<10{
+            let height:Int = number
+            for row in (1 ..< height + 1) {
+                var starCount  = 2*row - 1
+                var spaceCount = height - row
+
+            var spaceInFront = String(repeating: "🥝", count: spaceCount)
+            var stars = String(repeating: "🍎", count: starCount)
+
+            print(spaceInFront+stars)
+            content += spaceInFront+stars
+            content += "\n"
+            }
+            /*if number<10{
                 var j: Int = 0
                 for i in 1...number {
                    for kiwi in 0...number - i {
@@ -80,7 +92,7 @@ class shapeViewController: UIViewController {
                    }
                     content += "\n"
                }
-            }
+            }*/
         case 3: //diamond
             /*row 1: print 3 spaces + 1 star
             row 2: print 2 spaces + 3 stars
@@ -107,9 +119,8 @@ class shapeViewController: UIViewController {
             
             print(spaceInFront+stars)
                 
-                content += spaceInFront+stars
-                content += "\n"
-                //content += stars
+            content += spaceInFront+stars
+            content += "\n"
             }
                 
             }
